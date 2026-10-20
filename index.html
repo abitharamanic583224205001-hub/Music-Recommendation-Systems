@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Recommendation Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="dashboard">
+    <a href="https://open.spotify.com/" target="_blank" class="spotify-btn">
+    🎧 Open Spotify
+</a>
+
+    <h1>🎵 Music Recommendation System</h1>
+
+    <h3 id="welcome"></h3>
+
+    <label>Select Your Mood</label>
+
+    <select id="mood">
+        <option value="">--Select Mood--</option>
+        <option value="happy">😊 Happy</option>
+        <option value="love">❤️ Love</option>
+        <option value="sad">😢 Sad</option>
+        <option value="relax">😌 Relax</option>
+        <option value="workout">💪 Workout</option>
+    </select>
+
+    <br><br>
+
+    <button onclick="recommendMusic()">Recommend Songs</button>
+    <button onclick="changeMood()">🔄 Choose Another Mood</button>
+
+    <div id="songs"></div>
+
+    <br>
+
+    <button onclick="logout()">Logout</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
